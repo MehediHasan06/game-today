@@ -77,7 +77,7 @@ a{
 }
 
 /* Blogs block */
-.blog_block{
+.fixture_block{
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -103,57 +103,47 @@ a{
   line-height: 30px;
   text-align: center;
 }
+.fixture_block .active_nav{
+  background-color: #DD0000;
+  color: white;
+}
 
-.blogs{
+.fixtures{
   width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
   row-gap: 50px;
 }
-.blog_card{
+.fixture_card{
   border: 1px solid #E8E8E8;
-  border-radius: 0 0 8px 8px;
+  border-radius: 8px;
+  padding: 20px;
 }
-.blog_card .card_header{
-  margin-bottom: 20px;
-} 
-.blog_card .card_header img{
-  width: 100%;
-  object-fit: cover;
-} 
-.blog_card .card_body{
+.fixture_card .card_header{
   display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  padding: 0 10px;
-} 
-.blog_card .card_body a.card_tag{
-  color: black;
-  border: 1px solid black;
-  width: 100px;
-  padding: 10px;
-  border-radius: 6px;
+  justify-content: space-between;
+  margin: 60px 0 50px;
+}
+.card_body span.nation{    
+  display: block;
   text-align: center;
-  display: inline-block;
-  margin-bottom: 10px;
-} 
-.blog_card .card_body a.card_title{
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
   color: #161616;
+  margin-bottom: 20px;}
+.card_body span.date{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #4D4D4D;
+  text-align: center;
+  display: block;
 }
-.blog_card .card_footer{
-  margin-bottom: 20px;
-  padding: 0 10px;
-}
-.blog_card .card_footer span{
-  padding-right: 20px;
-} 
-.blog_card .card_footer span i{
-  padding-right: 5px;
-}
+
 
 /* footer */
 footer{
