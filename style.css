@@ -154,3 +154,34 @@ a{
 .blog_card .card_footer span i{
   padding-right: 5px;
 }
+
+/* footer */
+footer{
+  background: black;
+  color: white;
+  padding-bottom: 50px;
+}
+footer h3{
+  padding-top: 100px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+}
+footer hr{
+  background: #FFFFFF;
+  width: 90%;
+}
+footer nav{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+footer a{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #B9B9B9;
+}
