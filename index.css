@@ -103,6 +103,9 @@ a{
   line-height: 30px;
   text-align: center;
 }
+.site_nav a:not(.active_nav) {
+  border: 1px solid #E8E8E8;
+}
 .blog_block .active_nav{
   background-color: #DD0000;
   color: white;
@@ -209,10 +212,21 @@ footer a{
 }
 
 /* media query - Tablet */
-@media screen and 
-  (min-width: 768px) and 
-  (max-width: 1023px)
+@media screen and (min-width: 768px) and (max-width: 1023px)
   {
   a.view_cta{display: inline-block;}
-    
+
+  .blog_block{
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog_block nav{
+    flex-direction: revert;
+    background: none;
+    height: auto;
+    width: auto;
+  }
+  .blogs{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
