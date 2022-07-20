@@ -197,7 +197,7 @@ footer hr{
   background: #FFFFFF;
   width: 90%;
 }
-footer nav{
+footer nav.footer_nav{
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -210,6 +210,11 @@ footer a{
   line-height: 24px;
   color: #B9B9B9;
 }
+footer nav.social_menu{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
 /* media query - Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px)
@@ -221,12 +226,45 @@ footer a{
     align-items: center;
   }
   .blog_block nav{
-    flex-direction: revert;
+    flex-direction: row;
     background: none;
     height: auto;
     width: auto;
   }
   .blogs{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer_nav{
+    flex-wrap: wrap;
+  }
+}
+
+/* media query - Mobile */
+@media screen and (max-width: 768px) {
+  .hero_block{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog_block{
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog_block nav{
+    flex-direction: column;
+    background: none;
+    height: auto;
+    width: auto;
+  }
+  .blogs{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer_nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }
